@@ -11,8 +11,7 @@ environment {
 input {
     keyboard {
         xkb {
-            layout "pl"
-            options "ctrl:nocaps"
+            layout "us"
         }
         numlock
     }
