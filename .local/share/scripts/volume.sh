@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-ICON_DIR="/home/Ewa/.config/mako/icons/"
+ICON_DIR="~/.config/mako/icons/"
 generate_bar() {
     local filled=$(($1 / 5))
 
