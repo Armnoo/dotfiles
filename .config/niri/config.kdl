@@ -294,10 +294,12 @@ binds {
     Mod+Shift+E hotkey-overlay-title="Open Graphical file manager: nautilus" { spawn "nautilus"; } // not flatpak because its a dependency on xdg-desktop-portal-gnome
 
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "vol" "up"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "vol" "down"; }
-    XF86AudioMute        allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "vol" "mute"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "mic" "mute"; }
+    XF86AudioRaiseVolume  allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "vol" "up"; }
+    XF86AudioLowerVolume  allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "vol" "down"; }
+    XF86AudioMute         allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "vol" "mute"; }
+    XF86AudioMicMute      allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "mic" "mute"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "brt" "up"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "~/.local/share/scripts/volume.sh" "brt" "down"; }
 
     Mod+P       repeat=false { spawn "~/.local/share/scripts/change_monitor.sh"; }
     XF86Display repeat=false { spawn "~/.local/share/scripts/change_monitor.sh"; }
